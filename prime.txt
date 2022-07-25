@@ -1,0 +1,13 @@
+   { int n, i, s; 
+     proc smp (i1, s1)
+       { int j; j:=2; s1 := 1;
+         while (i1-j)  {
+            if (1 - i1 % j ) {s1 := 0; j:=i1};
+            j:=j+1 
+         }
+       }    
+     read n; i:=2;
+     while (n-i)
+        {smp(i,s); if(s) write i;
+         i := i+1}
+   }

@@ -1,0 +1,8 @@
+   { int a, b; 
+      proc print() {write a; write b}
+      proc exchange (a1,b1)
+        {int j; j:= a1; a1 :=b1; b1:=j}
+      read a; read b; print(); 
+      exchange (a,b); print () 
+          
+   }
