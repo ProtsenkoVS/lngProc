@@ -41,7 +41,7 @@ interpretFull p s st ix = let pr = parsePL p st
 interpret :: String -> [Integer] -> [Integer]
 interpret st ix = let pr = parsePLL st 
                       wf = iswfProgram pr
-                  in if wf then  iProgramRSa pr ix   -- iProgramRS pr ix 
+                  in if wf then  iProgram pr ix    
                            else error "Contex"
 
 ------ Робота з параметрами : Введення програми + даних --------------------
